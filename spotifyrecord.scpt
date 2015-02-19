@@ -1,5 +1,5 @@
 -- Code By Adamxp12.com - Tech Blog
--- Version 1.1
+-- Version 1.2
 -- TODO: Record whole playlist without the adverts
 --
 tell application "Spotify"
@@ -48,6 +48,7 @@ repeat
 			set theSession to the first session whose name contains "Spotify"
 			tell theSession to stop hijacking
 			tell theSession to stop recording
+			error number -128
 		end if
 	end tell
 	pos
